@@ -1,8 +1,5 @@
 //UI-Components
 @import "../partials/colors.scss";
-//input
-
-
 
 @mixin login-btn {
     width: 344px;
@@ -33,4 +30,12 @@
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
+    &:hover {
+        transition: 0.4s ease-in all;
+        background-color: $upgrade-btn;
+        -webkit-transition: 0.4s ease-in all;
+        -moz-transition: 0.4s ease-in all;
+        -ms-transition: 0.4s ease-in all;
+        -o-transition: 0.4s ease-in all;
+}
 }

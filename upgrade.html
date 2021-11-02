@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <title>Upgrade page</title>
+    <link href="src/sass/styles.css" rel="stylesheet" type="text/css">
+   
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <div class="container">
+      <header>
+        <img src="src/assets/undraw_online_payments_luau 1.png" alt="">
+      </header>
+      <section id="hero">
+        <h1>Get Pro Account</h1>
+      </section>
+      <form onsubmit="">
+        <div>
+          <input
+            type="number"
+            id="email"
+            placeholder="Card number"
+          >
+        </div>
+        <div class="card-number">
+          <input
+            type="text"
+            id="date"
+            placeholder="MM/YY"
+          >
+          <input
+            type="text"
+            id="number"
+            placeholder="CVV"
+          >
+        </div>
+        <p class="message">What this?</p>
+        <div class="postal-code">
+          <input
+          type="number"
+          id="email"
+          placeholder="ZIP/Postal Code"
+          >
+        </div>
+        <button class="login-btn upgrade-btn" type="submit">Upgrade</button>
+      </form>
+    </div>
   </body>
 </html>
