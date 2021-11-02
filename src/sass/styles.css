@@ -19,8 +19,8 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #000;
+  font-family: "Roboto", sans-serif;
+  background-color: #E5E5E5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
@@ -40,7 +40,116 @@ body {
 }
 
 #hero h1 {
-  color: black;
+  color: #000;
   font-weight: 700;
+  font-size: 36px;
+}
+
+input[type=email] {
+  width: 344px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2rem;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: white;
+  background-image: url("../assets/Shape.png");
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+input[type=email]:focus {
+  border: 2px solid #1A4F8B;
+  background-color: #fff;
+  color: #1A4F8B;
+}
+
+input[type=password] {
+  width: 344px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../assets/Shape (1).png");
+  background-position: 15px 12px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+form button.login-btn {
+  width: 344px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #1A4F8B;
+  border-radius: 8px;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+form div p {
+  text-align: right;
+  color: #1A4F8B;
+}
+
+#social-media p {
+  text-align: center;
+  color: #B0B0B0;
+  margin: 3rem 0rem 2rem;
+}
+
+#social-media #social-button .fb-btn {
+  width: 165px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background-color: #385C8E;
+  margin-right: 0.3rem;
+}
+
+#social-media #social-button .google-btn {
+  width: 165px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background-color: #F14436;
+  margin-left: 0.3rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,7 @@
 @import "UI-components/components.scss";
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     background-color:  $body-color;
     box-sizing: border-box;
     margin: 0 auto;
@@ -17,6 +17,77 @@ body {
 
 
 #hero h1 {
-    color: black;
+    color: $h1;
     font-weight: 700;
+    font-size: $font-size-h1;
+}
+
+input[type=email] {
+    width: 344px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    border:  1px solid #c3c3c3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: white;
+    background-image: url('../assets/Shape.png');
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=email]:focus {
+       border:  2px solid #1A4F8B;
+       background-color: #fff;
+       color: #1A4F8B;
+}
+
+input[type=password] {
+    width: 344px;
+    height: 50px;
+    box-sizing: border-box;
+    border:  1px solid #c3c3c3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../assets/Shape (1).png');
+    background-position: 15px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+form  button.login-btn {
+   @include login-btn;
+   margin-top: 2rem;
+}
+
+form div p {
+    text-align: right;
+    color: $submit-btn;
+}
+#social-media p {
+    text-align: center;
+    color: $social-txt;
+    margin: 3rem 0rem 2rem;
+}
+#social-media #social-button .fb-btn {
+    @include social-btn;
+    background-color: $fb-btn;
+    margin-right: 0.3rem;
+}
+
+#social-media #social-button .google-btn {
+    @include social-btn;
+    background-color: $google-btn;
+    margin-left: 0.3rem;
 }

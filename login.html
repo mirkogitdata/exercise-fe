@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <title>Login page</title>
     <link href="src/sass/styles.css" rel="stylesheet" type="text/css">
    
   </head>
@@ -18,26 +18,29 @@
       </section>
       
       <form onsubmit="">
-        <div style="position: relative;">
+        <div>
           <input
             type="email"
             id="email"
             placeholder="example@gmail.com"
           >
-          <img style="position: absolute;left: 0px;top: 0px;" src="src//assets//Shape.png" alt="" >
         </div>
         <div>
           <input
             type="password"
             id="password"
           >
+          <p>Forgot password?</p>
         </div>
-        <div>
-          <button type="submit">
-            Login
-          </button>
-        </div>
+        <button class="login-btn" type="submit">Log in</button>
       </form>
+      <section id="social-media">
+        <p>Or connect with social</p>
+        <div id="social-button">
+          <button class="fb-btn" type="submit">Facebook</button>
+          <button class="google-btn" type="submit">Google</button>
+        </div>
+      </section>
     </div>
   </body>
 </html>
