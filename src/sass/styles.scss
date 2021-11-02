@@ -15,6 +15,7 @@ body {
     align-items: center;
 }
 
+//Login Page
 
 #hero h1 {
     color: $h1;
@@ -90,4 +91,29 @@ form div p {
     @include social-btn;
     background-color: $google-btn;
     margin-left: 0.3rem;
+}
+
+//Password Page
+form  button.reset-btn {
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+ }
+
+.account-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.account-text p {
+    color: $social-txt;
+    font-size: 16px;
+}
+
+.account-text p span {
+   margin-left: 0.6rem;
+}
+
+.account-text p span a:link,
+.account-text p span a:visited {
+     text-decoration: none;
 }

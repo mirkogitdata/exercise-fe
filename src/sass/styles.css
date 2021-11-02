@@ -152,4 +152,33 @@ form div p {
   background-color: #F14436;
   margin-left: 0.3rem;
 }
+
+form button.reset-btn {
+  margin-top: 0rem;
+  margin-bottom: 10rem;
+}
+
+.account-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.account-text p {
+  color: #B0B0B0;
+  font-size: 16px;
+}
+
+.account-text p span {
+  margin-left: 0.6rem;
+}
+
+.account-text p span a:link,
+.account-text p span a:visited {
+  text-decoration: none;
+}
 /*# sourceMappingURL=styles.css.map */
