@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Static Template</title>
-    <link href="src/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="src/sass/styles.css" rel="stylesheet" type="text/css">
+   
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <div class="container">
+      <header>
+        <img src="src/assets/Login-illustration.png" alt="">
+      </header>
+      <section id="hero">
+        <h1>Welcome Back!</h1>
+      </section>
+      
+      <form onsubmit="">
+        <div style="position: relative;">
+          <input
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+          >
+          <img style="position: absolute;left: 0px;top: 0px;" src="src//assets//Shape.png" alt="" >
+        </div>
+        <div>
+          <input
+            type="password"
+            id="password"
+          >
+        </div>
+        <div>
+          <button type="submit">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

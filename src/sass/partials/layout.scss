@@ -1,1 +1,11 @@
 // Layout variables partial
+
+.container {
+    background-color: #fff;
+    width: 840px;
+    height: 841px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
