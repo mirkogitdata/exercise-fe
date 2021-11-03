@@ -16,30 +16,16 @@ body {
 
 //Login Page
 
-#hero h1 {
-    color: $h1;
-    font-weight: 700;
-    font-size: $font-size-h1;
-}
+#hero {
+    h1 {
+        color: $h1;
+        font-weight: 700;
+        font-size: $font-size-h1;
+    }
+} 
 
 input[type=email] {
-    width: 344px;
-    height: 50px;
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-    border:  1px solid #c3c3c3;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    font-size: 16px;
-    line-height: 16px;
-    background-color: white;
-    background-image: url('../assets/Shape.png');
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+   @include input-email;
 }
 
 input[type=email]:focus,
@@ -50,68 +36,78 @@ input[type=number]:focus {
 }
 
 input[type=password] {
-    width: 344px;
-    height: 50px;
-    box-sizing: border-box;
-    border:  1px solid #c3c3c3;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('../assets/Shape (1).png');
-    background-position: 15px 12px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    @include input-password;
 }
 
-form  button.login-btn {
-   @include login-btn;
-   margin-top: 2rem;
-}
+form {
+    button.login-btn {
+        @include login-btn;
+        margin-top: 2rem;
+     }
+} 
 
-form div p {
-    text-align: right;
-    color: $submit-btn;
-}
-#social-media p {
-    text-align: center;
-    color: $social-txt;
-    margin: 3rem 0rem 2rem;
-}
-#social-media #social-button .fb-btn {
-    @include social-btn;
-    background-color: $fb-btn;
-    margin-right: 0.3rem;
-}
+form {
+    div {
+        p {
+            text-align: right;
+            color: $submit-btn;
+        }
+    } 
+} 
+#social-media {
+    p {
+        text-align: center;
+        color: $social-txt;
+        margin: 3rem 0rem 2rem;
+    }
+} 
+#social-media {
+    #social-button {
+        .fb-btn {
+            @include social-btn;
+            background-color: $fb-btn;
+            margin-right: 0.3rem;
+        }
+    } 
+}   
 
-#social-media #social-button .google-btn {
-    @include social-btn;
-    background-color: $google-btn;
-    margin-left: 0.3rem;
-}
+#social-media {
+    #social-button {
+        .google-btn {
+            @include social-btn;
+            background-color: $google-btn;
+            margin-left: 0.3rem;
+        }
+    }
+}  
 
 //Password Page
-form  button.reset-btn {
-    margin-top: 0rem;
-    margin-bottom: 10rem;
- }
+form {
+    button.reset-btn {
+        margin-top: 0rem;
+        margin-bottom: 10rem;
+     }
+} 
 
 .account-text {
     display: flex;
     flex-direction: row;
 }
 
-.account-text p {
-    color: $social-txt;
-    font-size: 16px;
-}
+.account-text {
+    p {
+        color: $social-txt;
+        font-size: 16px;
+    }
+} 
 
-.account-text p span {
-   margin-left: 0.6rem;
-}
+.account-text {
+    p {
+        span {
+            margin-left: 0.6rem;
+         }
+    }
+} 
 
 .account-text p span a:link,
 .account-text p span a:visited {
@@ -124,63 +120,51 @@ form  button.reset-btn {
     flex-direction: row;
 }
 input[type=number] {
-    width: 344px;
-    height: 50px;
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-    border:  1px solid #c3c3c3;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    font-size: 16px;
-    line-height: 16px;
-    background-color: white;
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    @include input-number;
 }
-form .card-number input[type=text] {
-    width: 165px;
-    height: 50px;
-    box-sizing: border-box;
-    border:  1px solid #c3c3c3;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 15px 12px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;  
-}
+form {
+    .card-number {
+        input[type=text] {
+           @include input-text;
+        }
+    }
+} 
 
-form .card-number #date {
-    margin-right: 0.45rem;
-}
+form {
+    .card-number {
+        #date {
+            margin-right: 0.45rem;
+        }
+    }
+}  
 
-form .card-number #number {
-    margin-left: 0.45rem;
-}
+form {
+    .card-number {
+        #number {
+            margin-left: 0.45rem;
+        }
+    }
+}  
 
-form .message  {
-    text-align: right;
-    color: $postal-txt;
-}
-
-form  button.upgrade-btn {
-    margin-top: 1rem;
-    background-color: $upgrade-btn;
-    &:hover {
-        transition: .4s ease-in all;
-        background-color: $submit-btn;
-        -webkit-transition: .4s ease-in all;
-        -moz-transition: .4s ease-in all;
-        -ms-transition: .4s ease-in all;
-        -o-transition: .4s ease-in all;
-   }
-}
+form {
+    .message  {
+        text-align: right;
+        color: $postal-txt;
+    }
+    
+} 
+form {
+    button.upgrade-btn {
+        margin-top: 1rem;
+        background-color: $upgrade-btn;
+        &:hover {
+            transition: .4s ease-in all;
+            background-color: $submit-btn;
+            -webkit-transition: .4s ease-in all;
+            -moz-transition: .4s ease-in all;
+            -ms-transition: .4s ease-in all;
+            -o-transition: .4s ease-in all;
+       }
+    }
+}  
 

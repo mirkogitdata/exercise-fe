@@ -1,6 +1,84 @@
 //UI-Components
 @import "../partials/colors.scss";
 
+//input[type=emial] components
+@mixin input-email {
+    width: 344px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    border:  1px solid #c3c3c3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: white;
+    background-image: url('../assets/Shape.png');
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+//input[type=password] components
+@mixin input-password {
+    width: 344px;
+    height: 50px;
+    box-sizing: border-box;
+    border:  1px solid #c3c3c3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../assets/Shape (1).png');
+    background-position: 15px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+//input[type=number] components
+@mixin input-number {
+    width: 344px;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    border:  1px solid #c3c3c3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: white;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+//input[type=text] components
+@mixin input-text {
+    width: 165px;
+    height: 50px;
+    box-sizing: border-box;
+    border:  1px solid #c3c3c3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 15px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;  
+}
+
 @mixin login-btn {
     width: 344px;
     height: 50px;
@@ -37,5 +115,5 @@
         -moz-transition: 0.4s ease-in all;
         -ms-transition: 0.4s ease-in all;
         -o-transition: 0.4s ease-in all;
-}
+   }
 }
